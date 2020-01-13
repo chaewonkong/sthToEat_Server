@@ -11,4 +11,22 @@ When you click "Choose for me" button, a randomized selections will be given to 
 
 ## Dependencies
 
+| Dependency | Version |
+| ---------- | ------- |
+| node       | 12.14.1 |
+| typescript | ^3.7.4  |
+| express    | ^4.17.1 |
+
 ## Installation
+
+```shell
+$ yarn install
+```
+
+## Run
+
+Automatically compiles and runs server by using `nodemon` and `ts-node`.
+
+```shell
+$ yarn start
+```
