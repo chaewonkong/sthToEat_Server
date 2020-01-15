@@ -1,5 +1,6 @@
 import * as express from "express";
 import * as cors from "cors";
+import indexRouter from "./Routes";
 
 const PORT = process.env.PORT || 3004;
 
@@ -11,8 +12,6 @@ app.use(
   })
 );
 
-app.get("/", (req: express.Request, res: express.Response) => {
-  res.send("Hello world!");
-});
+app.use("/", indexRouter);
 
 app.listen(PORT, () => console.log(`Server at: ${PORT}`));
