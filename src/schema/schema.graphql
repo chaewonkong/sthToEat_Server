@@ -1,3 +1,8 @@
 type Query {
-  helloWorld: String!
+  foods: [Food]
+}
+
+type Food {
+  name: String!
+  imgUrl: String!
 }
